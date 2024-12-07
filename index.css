@@ -1,37 +1,33 @@
-*
-{
-	margin: 0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body
-{
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	color: #999999;
-	word-wrap:break-word;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #999999;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-p
-{
-	margin: 0 0 10px;
+p {
+  margin: 0 0 10px;
 }
 
-ul
-{
-	list-style: none;
+ul {
+  list-style: none;
 }
 
 .container {
-	width: 100%;
-	margin: auto;
-	font-weight: 900;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 0 0 200px;
+  width: 100%;
+  margin: auto;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 200px;
 }
 
 /*.take-input {
@@ -48,7 +44,9 @@ ul
   font-size: 15px;
 }*/
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   text-decoration: none;
   padding: 9px 15px;
   border: 1px solid #ececec;
@@ -57,13 +55,13 @@ a, a:link, a:visited {
 }
 
 .animate {
-	font-size: 50px;
-	margin: 100px 0 0;
-	border-bottom: 2px solid #ccc;
+  font-size: 50px;
+  margin: 100px 0 0;
+  border-bottom: 2px solid #ccc;
 }
 
 .animate span {
-	display: inline-block;
+  display: inline-block;
 }
 
 a.repeat {
@@ -87,275 +85,322 @@ a.repeat:hover {
 }
 
 .animate span:nth-of-type(2) {
-	animation-delay: .05s;
+  animation-delay: 0.05s;
 }
 .animate span:nth-of-type(3) {
-	animation-delay: .1s;
+  animation-delay: 0.1s;
 }
 .animate span:nth-of-type(4) {
-	animation-delay: .15s;
+  animation-delay: 0.15s;
 }
 .animate span:nth-of-type(5) {
-	animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 .animate span:nth-of-type(6) {
-	animation-delay: .25s;
+  animation-delay: 0.25s;
 }
 .animate span:nth-of-type(7) {
-	animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 .animate span:nth-of-type(8) {
-	animation-delay: .35s;
+  animation-delay: 0.35s;
 }
 .animate span:nth-of-type(9) {
-	animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 .animate span:nth-of-type(10) {
-	animation-delay: .45s;
+  animation-delay: 0.45s;
 }
 .animate span:nth-of-type(11) {
-	animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 .animate span:nth-of-type(12) {
-	animation-delay: .55s;
+  animation-delay: 0.55s;
 }
 .animate span:nth-of-type(13) {
-	animation-delay: .6s;
+  animation-delay: 0.6s;
 }
 .animate span:nth-of-type(14) {
-	animation-delay: .65s;
+  animation-delay: 0.65s;
 }
 .animate span:nth-of-type(15) {
-	animation-delay: .7s;
+  animation-delay: 0.7s;
 }
 .animate span:nth-of-type(16) {
-	animation-delay: .75s;
+  animation-delay: 0.75s;
 }
 .animate span:nth-of-type(17) {
-	animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 .animate span:nth-of-type(18) {
-	animation-delay: .85s;
+  animation-delay: 0.85s;
 }
 .animate span:nth-of-type(19) {
-	animation-delay: .9s;
+  animation-delay: 0.9s;
 }
 .animate span:nth-of-type(20) {
-	animation-delay: .95s;
+  animation-delay: 0.95s;
 }
-
 
 /* Animation One */
 
 .one span {
-	color: #24a8e6;
-	opacity: 0;
-	transform: translate(-150px, -50px) rotate(-180deg) scale(3);
-	animation: revolveScale .4s forwards;
+  color: #24a8e6;
+  opacity: 0;
+  transform: translate(-150px, -50px) rotate(-180deg) scale(3);
+  animation: revolveScale 0.4s forwards;
 }
 
 @keyframes revolveScale {
-	60% {
-		transform: translate(20px, 20px) rotate(30deg) scale(.3);
-	}
+  60% {
+    transform: translate(20px, 20px) rotate(30deg) scale(0.3);
+  }
 
-	100% {
-		transform: translate(0) rotate(0) scale(1);
-		opacity: 1;
-	}
+  100% {
+    transform: translate(0) rotate(0) scale(1);
+    opacity: 1;
+  }
 }
-
 
 /* Animation Two */
 
 .two span {
-	color: #a5cb21;
-	opacity: 0;
-	transform: translate(200px, -100px) scale(2);
-	animation: ballDrop .3s forwards;
+  color: #a5cb21;
+  opacity: 0;
+  transform: translate(200px, -100px) scale(2);
+  animation: ballDrop 0.3s forwards;
 }
 
 @keyframes ballDrop {
-	60% {
-		transform: translate(0, 20px) rotate(-180deg) scale(.5);
-	}
+  60% {
+    transform: translate(0, 20px) rotate(-180deg) scale(0.5);
+  }
 
-	100% {
-		transform: translate(0) rotate(0deg) scale(1);
-		opacity: 1;
-	}
+  100% {
+    transform: translate(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
 }
-
 
 /* Animation Three */
 
-
 .three span {
-	color: #b10e81;
-	opacity: 0;
-	transform: translate(-300px, 0) scale(0);
-	animation: sideSlide .5s forwards;
+  color: #b10e81;
+  opacity: 0;
+  transform: translate(-300px, 0) scale(0);
+  animation: sideSlide 0.5s forwards;
 }
 
 @keyframes sideSlide {
-	60% {
-		transform: translate(20px, 0) scale(1);
-		color: #b10e81;
-	}
+  60% {
+    transform: translate(20px, 0) scale(1);
+    color: #b10e81;
+  }
 
-	80% {
-		transform: translate(20px, 0) scale(1);
-		color: #b10e81;
-	}
+  80% {
+    transform: translate(20px, 0) scale(1);
+    color: #b10e81;
+  }
 
-	99% {
-		transform: translate(0) scale(1.2);
-		color: #00f0ff;
-	}
+  99% {
+    transform: translate(0) scale(1.2);
+    color: #00f0ff;
+  }
 
-	100% {
-		transform: translate(0) scale(1);
-		opacity: 1;
-		color: #b10e81;
-	}
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+    color: #b10e81;
+  }
 }
-
 
 /* Animation Four */
 
-
 .four span {
-	color: #8d6a00;
-	opacity: 0;
-	transform: translate(0, -100px) rotate(360deg) scale(0);
-	animation: revolveDrop .3s forwards;
+  color: #8d6a00;
+  opacity: 0;
+  transform: translate(0, -100px) rotate(360deg) scale(0);
+  animation: revolveDrop 0.3s forwards;
 }
-
 
 @keyframes revolveDrop {
-	30% {
-		transform: translate(0, -50px) rotate(180deg) scale(1);
-	}
+  30% {
+    transform: translate(0, -50px) rotate(180deg) scale(1);
+  }
 
-	60% {
-		transform: translate(0, 20px) scale(.8) rotate(0deg);
-	}
+  60% {
+    transform: translate(0, 20px) scale(0.8) rotate(0deg);
+  }
 
-	100% {
-		transform: translate(0) scale(1) rotate(0deg);
-		opacity: 1;
-	}
+  100% {
+    transform: translate(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
 }
-
 
 /* Animation Five */
 
-
 .five span {
-	color: #dd3f0f;
-	opacity: 0;
-	transform: translate(0, -100px) rotate(360deg) scale(0);
-	animation: dropVanish .5s forwards;
+  color: #dd3f0f;
+  opacity: 0;
+  transform: translate(0, -100px) rotate(360deg) scale(0);
+  animation: dropVanish 0.5s forwards;
 }
-
 
 @keyframes dropVanish {
-	30% {
-		transform: translate(0, -50px) rotate(180deg) scale(1);
-	}
+  30% {
+    transform: translate(0, -50px) rotate(180deg) scale(1);
+  }
 
-	50% {
-		transform: translate(0, 20px) scale(.8) rotate(0deg);
-		opacity: 1;
-	}
+  50% {
+    transform: translate(0, 20px) scale(0.8) rotate(0deg);
+    opacity: 1;
+  }
 
-	80% {
-		transform: translate(-100px, -100px) scale(1.5) rotate(-180deg);
-		opacity: 0;
-	}
+  80% {
+    transform: translate(-100px, -100px) scale(1.5) rotate(-180deg);
+    opacity: 0;
+  }
 
-	100% {
-		transform: translate(0) scale(1) rotate(0deg);
-		opacity: 1;
-	}
+  100% {
+    transform: translate(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
 }
-
-
 
 /* Animation Six */
 
-
 .six span {
-	color: #ddb40f;
-	opacity: 0;
-	transform: rotate(-180deg) translate(150px, 0);
-	animation: twister .5s forwards;
+  color: #ddb40f;
+  opacity: 0;
+  transform: rotate(-180deg) translate(150px, 0);
+  animation: twister 0.5s forwards;
 }
-
 
 @keyframes twister {
-	10% {
-		opacity: 1;
-	}
-	100% {
-		transform: rotate(0deg) translate(0);
-		opacity: 1;
-	}
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg) translate(0);
+    opacity: 1;
+  }
 }
-
-
 
 /* Animation Seven */
 
-
 .seven span {
-	color: #348c04;
-	opacity: 0;
-	transform: translate(-150px, 0) scale(.3);
-	animation: leftRight .5s forwards;
+  color: #348c04;
+  opacity: 0;
+  transform: translate(-150px, 0) scale(0.3);
+  animation: leftRight 0.5s forwards;
 }
 
-
 @keyframes leftRight {
-	40% {
-		transform: translate(50px, 0) scale(.7);
-		opacity: 1;
-		color: #348c04;
-	}
+  40% {
+    transform: translate(50px, 0) scale(0.7);
+    opacity: 1;
+    color: #348c04;
+  }
 
-	60% {
-		color: #0f40ba;
-	}
+  60% {
+    color: #0f40ba;
+  }
 
-	80% {
-		transform: translate(0) scale(2);
-		opacity: 0;
-	}
+  80% {
+    transform: translate(0) scale(2);
+    opacity: 0;
+  }
 
-	100% {
-		transform: translate(0) scale(1);
-		opacity: 1;
-	}
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
 }
 
 .title {
-    font-size: 50px;
+  font-size: 50px;
+}
+.card-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 防止溢出 */
+  display: flex;
+  flex-direction: column-reverse; /* 新的卡片插入顶部 */
+}
+.poem-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  animation: slideIn 0.8s ease-out forwards;
+  font-family: cursive;
 }
 
-.poem-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 20px;
-    background-color: #f9f9f9;
+.poem-card h3 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* 卡片内容样式 */
+.poem-card .poem-content p {
+  margin: 5px 0;
+  font-size: 38px;
+  text-align: center;
+}
+
+/* 按钮固定到底部 */
+#next {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 26px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  border-radius: 500px;
+  padding: 10px 50px;
+  font-family: cursive;
+}
+
+#next:hover {
+  background-color: #000;
+}
+
+/* 卡片进入动画 */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
   }
-  
-  .poem-card h3 {
-    margin: 0;
-    font-size: 18px;
+  to {
+    transform: translateY(0);
   }
-  
-  .poem-card .poem-content p {
-    margin: 5px 0;
-    font-size: 16px;
+}
+
+/* 卡片退出动画 */
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
   }
-  
+  to {
+    transform: translateY(-100%);
+  }
+}
